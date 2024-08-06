@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Search Results - SkyWay Airlines</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #00223E, #FFA17F);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 2.5em;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        
+        nav {
+            margin-top: 20px;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #FFA17F;
+        }
+        
+        main {
+            flex-grow: 1;
+            padding: 50px 20px;
+        }
+        
+        .search-summary {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .flight-results {
+            display: grid;
+            gap: 20px;
+        }
+        
+        .flight-card {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .flight-info {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .flight-time {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        
+        .flight-duration {
+            color: #FFA17F;
+        }
+        
+        .flight-details {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .price {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #FFA17F;
+        }
+        
+        .select-flight {
+            background-color: #FFA17F;
+            color: #00223E;
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .select-flight:hover {
+            background-color: #FF8C5A;
+        }
+        
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">SkyWay Airlines</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="flight.html">Flights</a>
+            <a href="destination.html">Destinations</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="search-summary">
+            <h1>Flight Search Results</h1>
+            <p>New York (JFK) to London (LHR) | 15 Aug 2024 | 2 Adults | Economy</p>
+        </div>
+        
+        <div class="flight-results">
+            <div class="flight-card">
+                <div class="flight-info">
+                    <span class="flight-time">08:00 - 20:00</span>
+                    <span class="flight-duration">Duration: 7h 00m</span>
+                </div>
+                <div class="flight-details">
+                    <div>
+                        <p>SkyWay Airlines 101</p>
+                        <p>Boeing 787 Dreamliner</p>
+                    </div>
+                    <div>
+                        <p>Non-stop</p>
+                        <p>Economy</p>
+                    </div>
+                </div>
+                <div class="booking-info">
+                    <span class="price">$599</span>
+                    <button class="select-flight">Select</button>
+                </div>
+            </div>
+            
+            <div class="flight-card">
+                <div class="flight-info">
+                    <span class="flight-time">14:30 - 02:30</span>
+                    <span class="flight-duration">Duration: 7h 00m</span>
+                </div>
+                <div class="flight-details">
+                    <div>
+                        <p>SkyWay Airlines 103</p>
+                        <p>Airbus A350</p>
+                    </div>
+                    <div>
+                        <p>Non-stop</p>
+                        <p>Economy</p>
+                    </div>
+                </div>
+                <div class="booking-info">
+                    <span class="price">$649</span>
+                    <button class="select-flight">Select</button>
+                </div>
+            </div>
+            
+            <div class="flight-card">
+                <div class="flight-info">
+                    <span class="flight-time">21:00 - 09:00</span>
+                    <span class="flight-duration">Duration: 7h 00m</span>
+                </div>
+                <div class="flight-details">
+                    <div>
+                        <p>SkyWay Airlines 105</p>
+                        <p>Boeing 777</p>
+                    </div>
+                    <div>
+                        <p>Non-stop</p>
+                        <p>Economy</p>
+                    </div>
+                </div>
+                <div class="booking-info">
+                    <span class="price">$579</span>
+                    <button class="select-flight">Select</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 SkyWay Airlines. All rights reserved.</p>
+    </footer>
+</body>
+</html>

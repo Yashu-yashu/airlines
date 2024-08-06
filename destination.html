@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - SkyWay Airlines</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #00223E, #FFA17F);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 2.5em;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        
+        nav {
+            margin-top: 20px;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #FFA17F;
+        }
+        
+        main {
+            flex-grow: 1;
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .destinations-intro {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        h1, h2 {
+            color: #FFA17F;
+        }
+        
+        .destination-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .destination-card {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .destination-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .destination-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .destination-info {
+            padding: 20px;
+        }
+        
+        .destination-name {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        
+        .destination-description {
+            margin-bottom: 15px;
+        }
+        
+        .explore-button {
+            display: inline-block;
+            background-color: #FFA17F;
+            color: #00223E;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .explore-button:hover {
+            background-color: #FF8C5A;
+        }
+        
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">SkyWay Airlines</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="flight.html">Flights</a>
+            <a href="destination.html">Destinations</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="destinations-intro">
+            <h1>Explore Our Destinations</h1>
+            <p>Embark on a journey to some of the world's most captivating locations with SkyWay Airlines. From bustling metropolises to serene tropical paradises, we'll take you there in style and comfort.</p>
+        </section>
+        
+        <div class="destination-grid">
+            <div class="destination-card">
+                <div class="destination-image" style="background-image: url('paris.jpg');"></div>
+                <div class="destination-info">
+                    <h2 class="destination-name">Paris, France</h2>
+                    <p class="destination-description">Experience the romance and charm of the City of Light.</p>
+                    <a href="#" class="explore-button">Explore Paris</a>
+                </div>
+            </div>
+            
+            <div class="destination-card">
+                <div class="destination-image" style="background-image: url('tokyo.jpg');"></div>
+                <div class="destination-info">
+                    <h2 class="destination-name">Tokyo, Japan</h2>
+                    <p class="destination-description">Discover the perfect blend of tradition and modernity.</p>
+                    <a href="#" class="explore-button">Explore Tokyo</a>
+                </div>
+            </div>
+            
+            <div class="destination-card">
+                <div class="destination-image" style="background-image: url('newyork.jpg');"></div>
+                <div class="destination-info">
+                    <h2 class="destination-name">New York City, USA</h2>
+                    <p class="destination-description">Immerse yourself in the energy of the Big Apple.</p>
+                    <a href="#" class="explore-button">Explore New York</a>
+                </div>
+            </div>
+            
+            <div class="destination-card">
+                <div class="destination-image" style="background-image: url('bali.jpg');"></div>
+                <div class="destination-info">
+                    <h2 class="destination-name">Bali, Indonesia</h2>
+                    <p class="destination-description">Relax on pristine beaches and explore lush landscapes.</p>
+                    <a href="#" class="explore-button">Explore Bali</a>
+                </div>
+            </div>
+            
+            <div class="destination-card">
+                <div class="destination-image" style="background-image: url('rome.jpg');"></div>
+                <div class="destination-info">
+                    <h2 class="destination-name">Rome, Italy</h2>
+                    <p class="destination-description">Step back in time in the Eternal City.</p>
+                    <a href="#" class="explore-button">Explore Rome</a>
+                </div>
+            </div>
+            
+            <div class="destination-card">
+                <div class="destination-image" style="background-image: url('sydney.jpg');"></div>
+                <div class="destination-info">
+                    <h2 class="destination-name">Sydney, Australia</h2>
+                    <p class="destination-description">Experience the vibrant culture of the Land Down Under.</p>
+                    <a href="#" class="explore-button">Explore Sydney</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 SkyWay Airlines. All rights reserved.</p>
+    </footer>
+</body>
+</html>

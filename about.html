@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SkyWay Airlines</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #00223E, #FFA17F);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 2.5em;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        
+        nav {
+            margin-top: 20px;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #FFA17F;
+        }
+        
+        main {
+            flex-grow: 1;
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .about-section {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        h1, h2 {
+            color: #FFA17F;
+        }
+        
+        .mission-vision {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        
+        .mission, .vision {
+            width: 45%;
+            background-color: rgba(255, 161, 127, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .timeline {
+            margin-top: 50px;
+        }
+        
+        .timeline-item {
+            display: flex;
+            margin-bottom: 30px;
+        }
+        
+        .timeline-year {
+            flex: 0 0 100px;
+            font-weight: bold;
+            color: #FFA17F;
+        }
+        
+        .timeline-content {
+            flex: 1;
+            padding-left: 20px;
+            border-left: 2px solid #FFA17F;
+        }
+        
+        .awards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        
+        .award {
+            background-color: rgba(255, 161, 127, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px;
+            text-align: center;
+            width: calc(33.33% - 20px);
+        }
+        
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">SkyWay Airlines</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="flight.html">Flights</a>
+            <a href="destination.html">Destinations</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="about-section">
+            <h1>About SkyWay Airlines</h1>
+            <p>SkyWay Airlines is a premier global carrier, committed to providing unparalleled service and connecting people across the world. Since our inception, we have been at the forefront of aviation innovation, consistently setting new standards for comfort, safety, and customer satisfaction.</p>
+            
+            <div class="mission-vision">
+                <div class="mission">
+                    <h2>Our Mission</h2>
+                    <p>To connect the world through safe, comfortable, and sustainable air travel, while delivering exceptional experiences to our customers.</p>
+                </div>
+                <div class="vision">
+                    <h2>Our Vision</h2>
+                    <p>To be the world's most admired airline, known for innovation, reliability, and customer-centric service.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="about-section timeline">
+            <h2>Our Journey</h2>
+            <div class="timeline-item">
+                <div class="timeline-year">1985</div>
+                <div class="timeline-content">
+                    <h3>Foundation</h3>
+                    <p>SkyWay Airlines was founded with a fleet of just three aircraft.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">1995</div>
+                <div class="timeline-content">
+                    <h3>International Expansion</h3>
+                    <p>We launched our first intercontinental routes, connecting major global hubs.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2010</div>
+                <div class="timeline-content">
+                    <h3>Modernization</h3>
+                    <p>Introduced a state-of-the-art fleet, focusing on fuel efficiency and passenger comfort.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2024</div>
+                <div class="timeline-content">
+                    <h3>Innovation Leader</h3>
+                    <p>Recognized as an industry leader in sustainable aviation and customer service.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="about-section">
+            <h2>Awards and Recognition</h2>
+            <div class="awards">
+                <div class="award">
+                    <h3>Best Airline 2023</h3>
+                    <p>Skytrax World Airline Awards</p>
+                </div>
+                <div class="award">
+                    <h3>Best Cabin Crew 2022</h3>
+                    <p>Business Traveller Awards</p>
+                </div>
+                <div class="award">
+                    <h3>Most Innovative Airline 2024</h3>
+                    <p>Global Travel Tech Awards</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 SkyWay Airlines. All rights reserved.</p>
+    </footer>
+</body>
+</html>
